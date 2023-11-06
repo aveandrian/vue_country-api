@@ -34,7 +34,6 @@ const bordersNames = ref<Array<string>>([])
 const bordersItems = computed<Array<string>>(() => props.borders)
 
 async function getBordersInfo(): Promise<void> {
-  console.log('props.border', bordersItems.value)
   isLoading.value = true
   bordersNames.value = []
   let array = []

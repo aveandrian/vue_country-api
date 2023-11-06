@@ -76,7 +76,6 @@ const currencies = ref<string>()
 const languages = ref<string>()
 
 function getCountryInfo(): void {
-  console.log(route.params)
   fetch(`https://restcountries.com/v3.1/alpha/${route.params.countryName}`)
     .then((res) => res.json())
     .then((data: Country[]) => {

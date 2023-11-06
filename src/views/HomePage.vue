@@ -121,8 +121,6 @@ const isRegionFilterOpened = ref<boolean>(false)
 const regionFilter = ref<string | null>(null)
 const isLoading = ref<boolean>(false)
 
-console.log(regionFilter)
-
 function toggleRegionFilter(): void {
   isRegionFilterOpened.value = !isRegionFilterOpened.value
 }
