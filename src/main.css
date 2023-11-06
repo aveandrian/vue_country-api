@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+html.dark {
+  --color-bg: hsl(207, 26%, 17%);
+  --elements: hsl(209, 23%, 22%);
+  --color-text: hsl(0, 0%, 100%);
+  --text: hsl(0, 0%, 100%);
+  --color-input: hsl(209, 23%, 22%);
+}
+
+html.light {
+  --color-bg: hsl(0, 0%, 98%);
+  --elements: hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --color-input: hsl(0, 0%, 52%);
+}
+
+body {
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+p,
+h1,
+input {
+  color: var(--color-text);
+}
