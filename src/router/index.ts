@@ -8,11 +8,11 @@ const routes = [
     children: [
       {
         path: '',
-        component: () => HomePage
+        component: HomePage
       },
       {
         path: '/:countryName',
-        component: () => CountryPage
+        component: CountryPage
       }
     ]
   }
